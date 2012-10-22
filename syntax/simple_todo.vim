@@ -19,15 +19,3 @@ hi def link Done Todo
 
 let b:current_syntax = "simple_todo"
 
-if exists("did_load_filetypes")
- finish
-endif
-augroup filetypedetect
- au! BufRead,BufNewFile TODO simple_todo
- au! BufRead,BufNewFile todo simple_todo
-augroup END
-
-
-
-
-
